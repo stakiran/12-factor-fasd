@@ -194,9 +194,6 @@ Considerations:
 ### 10: Keep wait time under a coffee break
 Because the efficiency of the feedback loop matters most.
 
-To meet this strict guideline, refined design is indispensable. Define timeout values as a constitution, and if timeouts occur, suspect the design.
-It also conflicts with enterprise third-party products that tend to do heavy processing (especially SCA and other quality-evaluation products). These products either can't be integrated into CI/CD, or their processing time exceeds a coffee break, or they suffer from both. Replace them with lightweight, customizable open source alternatives. Or, if you really want to use such products, you should prepare them so they can be used as tool invocations without damaging the FASD trial-and-error experience. Do not begrudge the effort and budget for this. In my experience, people often hesitate on the budget part. That means they don't believe it's absolutely necessary. If so, an open source alternative is fine. In the first place, the dependent mindset of "it's a third-party product so it's safe" is not good.
-
 Actions:
 
 - Define timeout values as a constitution
